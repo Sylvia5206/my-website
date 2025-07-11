@@ -25,9 +25,30 @@
       font-size: 1.3em;
       margin-top: 10px;
     }
+    nav {
+      max-width: 800px;
+      margin: 20px auto;
+      padding: 0 15px;
+      text-align: center;
+    }
+    nav a {
+      margin-right: 20px;
+      font-weight: bold;
+      text-decoration: none;
+      color: #555;
+      padding: 8px 12px;
+      border-radius: 5px;
+      border: 2px solid transparent;
+      transition: 0.3s;
+      cursor: pointer;
+    }
+    nav a.active, nav a:hover {
+      color: #5c6bc0;
+      border-color: #5c6bc0;
+    }
     main {
       max-width: 800px;
-      margin: 40px auto;
+      margin: 0 auto 40px auto;
       padding: 30px;
       background: white;
       border-radius: 10px;
@@ -67,6 +88,14 @@
       color: #888;
       font-size: 0.9em;
     }
+    .question {
+      font-weight: bold;
+      margin-top: 15px;
+    }
+    .answer {
+      margin-left: 20px;
+      margin-bottom: 15px;
+    }
   </style>
 </head>
 <body>
@@ -76,35 +105,109 @@
     <p>Un message puissant pour t’inspirer et te transformer</p>
   </header>
 
+  <nav>
+    <a href="#" id="homeTab" class="active">Accueil</a>
+    <a href="#" id="faqTab">📚 FAQ – Ma Routine Quotidienne</a>
+  </nav>
+
   <main>
-    <img src="https://via.placeholder.com/300x450?text=Couverture+du+Livre" alt="Couverture du livre" class="book-cover" />
+    <section id="home" style="display: block;">
+      <img src="https://via.placeholder.com/300x450?text=Couverture+du+Livre" alt="Couverture du livre" class="book-cover" />
 
-    <section>
-      <h2>À propos du livre</h2>
-      <p>
-        Ce livre est le fruit de mon parcours, de mes réflexions et de mes expériences. Il s’adresse à toute personne qui cherche à se reconnecter à elle-même, à retrouver confiance et à oser avancer. Tu y trouveras des mots simples, vrais et profondément humains.
-      </p>
+      <section>
+        <h2>À propos du livre</h2>
+        <p>
+          Ce livre est le fruit de mon parcours, de mes réflexions et de mes expériences. Il s’adresse à toute personne qui cherche à se reconnecter à elle-même, à retrouver confiance et à oser avancer. Tu y trouveras des mots simples, vrais et profondément humains.
+        </p>
+      </section>
+
+      <section>
+        <h2>Pourquoi le lire ?</h2>
+        <ul>
+          <li>Pour t’inspirer dans ton cheminement personnel</li>
+          <li>Pour découvrir une nouvelle perspective sur la vie</li>
+          <li>Pour sentir que tu n’es pas seul(e) dans ce que tu vis</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Commandez maintenant</h2>
+        <p>Disponible en version papier et PDF. Livraison rapide !</p>
+        <a href="mailto:sylvia.contact6@gmail.com?subject=Je veux acheter votre livre" class="buy-button">Commander par email</a>
+      </section>
     </section>
 
-    <section>
-      <h2>Pourquoi le lire ?</h2>
-      <ul>
-        <li>Pour t’inspirer dans ton cheminement personnel</li>
-        <li>Pour découvrir une nouvelle perspective sur la vie</li>
-        <li>Pour sentir que tu n’es pas seul(e) dans ce que tu vis</li>
-      </ul>
-    </section>
+    <section id="faq" style="display: none;">
+      <h2>📚 FAQ – Ma Routine Quotidienne</h2>
 
-    <section>
-      <h2>Commandez maintenant</h2>
-      <p>Disponible en version papier et PDF. Livraison rapide !</p>
-      <a href="mailto:sylvia.contact6@gmail.com?subject=Je veux acheter votre livre" class="buy-button">Commander par email</a>
+      <div class="question">1. À qui s’adresse ce livre ?</div>
+      <div class="answer">
+        Ce livre s’adresse à toute personne souhaitant structurer ses journées de manière plus équilibrée et efficace : étudiants, parents, ou simplement ceux qui veulent sortir du chaos quotidien.
+      </div>
+
+      <div class="question">2. Est-ce que ce livre convient aux débutants ?</div>
+      <div class="answer">
+        Oui, totalement. Il part des bases, explique les concepts clés d’une bonne routine et propose un accompagnement pas à pas pour construire sa propre organisation, même si on n’a jamais suivi de routine avant.
+      </div>
+
+      <div class="question">3. Dois-je suivre la routine proposée à la lettre ?</div>
+      <div class="answer">
+        Non. Le but du livre est de t’aider à créer ta propre routine, adaptée à ton rythme, tes objectifs et ton mode de vie. La flexibilité est au cœur de l’approche proposée.
+      </div>
+
+      <div class="question">4. Combien de temps faut-il pour voir des résultats ?</div>
+      <div class="answer">
+        Cela dépend de chaque personne, mais en général, après 1 à 2 semaines de mise en place, on ressent déjà une amélioration en termes d’énergie, de clarté mentale et de gestion du temps.
+      </div>
+
+      <div class="question">5. Le livre contient-il des exercices pratiques ?</div>
+      <div class="answer">
+        Oui. Il inclut des exemples concrets, des conseils applicables au quotidien et des suggestions d’activités pour chaque moment de la journée.
+      </div>
+
+      <div class="question">6. Est-ce que ce livre parle uniquement de productivité ?</div>
+      <div class="answer">
+        Non. Il traite aussi de bien-être, de repos, de temps pour soi, et de comment trouver un équilibre global dans la vie de tous les jours.
+      </div>
+
+      <div class="question">7. Puis-je lire ce livre même si j’ai un emploi du temps irrégulier ?</div>
+      <div class="answer">
+        Absolument. Le livre aborde aussi le cas des emplois du temps changeants ( famille, imprévus) et donne des astuces pour garder une routine flexible mais cohérente.
+      </div>
+
+      <div class="question">8. Est-ce un guide théorique ou plutôt pratique ?</div>
+      <div class="answer">
+        C’est un guide pratique, avec des explications simples, des exemples, et des conseils directement applicables pour passer à l’action.
+      </div>
     </section>
   </main>
 
   <footer>
     © 2025 Sylvia — Tous droits réservés
   </footer>
+
+  <script>
+    const homeTab = document.getElementById('homeTab');
+    const faqTab = document.getElementById('faqTab');
+    const homeSection = document.getElementById('home');
+    const faqSection = document.getElementById('faq');
+
+    homeTab.addEventListener('click', (e) => {
+      e.preventDefault();
+      homeSection.style.display = 'block';
+      faqSection.style.display = 'none';
+      homeTab.classList.add('active');
+      faqTab.classList.remove('active');
+    });
+
+    faqTab.addEventListener('click', (e) => {
+      e.preventDefault();
+      faqSection.style.display = 'block';
+      homeSection.style.display = 'none';
+      faqTab.classList.add('active');
+      homeTab.classList.remove('active');
+    });
+  </script>
 
 </body>
 </html>
