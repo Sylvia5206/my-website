@@ -3,63 +3,109 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Mon Entreprise en Ligne</title>
+  <title>Mon Livre – Sylvia</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
-      margin: 40px;
-      background-color: #f9f9f9;
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: #f9f9f9;
       color: #333;
     }
     header {
+      background: #5c6bc0;
+      color: white;
+      padding: 60px 20px;
       text-align: center;
-      margin-bottom: 50px;
     }
-    h1 {
-      color: #0077cc;
+    header h1 {
+      font-size: 2.8em;
+      margin: 0;
+    }
+    header p {
+      font-size: 1.3em;
+      margin-top: 10px;
+    }
+    main {
+      max-width: 800px;
+      margin: 40px auto;
+      padding: 30px;
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 0 15px #ddd;
+    }
+    img.book-cover {
+      width: 100%;
+      max-width: 300px;
+      border-radius: 8px;
+      display: block;
+      margin: 20px auto;
     }
     section {
-      max-width: 600px;
-      margin: 0 auto 30px auto;
-      padding: 20px;
-      background: white;
-      border-radius: 8px;
-      box-shadow: 0 0 10px #ccc;
+      margin-bottom: 30px;
     }
-    a.button {
+    h2 {
+      color: #5c6bc0;
+      border-bottom: 1px solid #eee;
+      padding-bottom: 5px;
+    }
+    .buy-button {
       display: inline-block;
+      margin-top: 15px;
       padding: 12px 25px;
-      background-color: #0077cc;
+      background: #5c6bc0;
       color: white;
       text-decoration: none;
       border-radius: 5px;
-      font-weight: bold;
-      margin-top: 15px;
+      font-size: 1em;
     }
-    a.button:hover {
-      background-color: #005fa3;
+    .buy-button:hover {
+      background: #3f51b5;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      color: #888;
+      font-size: 0.9em;
     }
   </style>
 </head>
 <body>
+
   <header>
-    <h1>Bienvenue chez Mon Entreprise en Ligne</h1>
-    <p>Services simples et efficaces pour votre réussite</p>
+    <h1>Découvre mon livre</h1>
+    <p>Un message puissant pour t’inspirer et te transformer</p>
   </header>
 
-  <section>
-    <h2>Nos Services</h2>
-    <ul>
-      <li>Création de sites web modernes</li>
-      <li>Consultation marketing digital</li>
-      <li>Support personnalisé 24/7</li>
-    </ul>
-  </section>
+  <main>
+    <img src="https://via.placeholder.com/300x450?text=Couverture+du+Livre" alt="Couverture du livre" class="book-cover" />
 
-  <section>
-    <h2>Contactez-nous</h2>
-    <p>Vous avez un projet ? Parlons-en !</p>
-    <a href="mailto:contact@monentreprise.com" class="button">Envoyer un email</a>
-  </section>
+    <section>
+      <h2>À propos du livre</h2>
+      <p>
+        Ce livre est le fruit de mon parcours, de mes réflexions et de mes expériences. Il s’adresse à toute personne qui cherche à se reconnecter à elle-même, à retrouver confiance et à oser avancer. Tu y trouveras des mots simples, vrais et profondément humains.
+      </p>
+    </section>
+
+    <section>
+      <h2>Pourquoi le lire ?</h2>
+      <ul>
+        <li>Pour t’inspirer dans ton cheminement personnel</li>
+        <li>Pour découvrir une nouvelle perspective sur la vie</li>
+        <li>Pour sentir que tu n’es pas seul(e) dans ce que tu vis</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Commandez maintenant</h2>
+      <p>Disponible en version papier et PDF. Livraison rapide !</p>
+      <a href="mailto:sylvia@example.com?subject=Je veux acheter votre livre" class="buy-button">Commander par email</a>
+    </section>
+  </main>
+
+  <footer>
+    © 2025 Sylvia — Tous droits réservés
+  </footer>
+
 </body>
 </html>
+
